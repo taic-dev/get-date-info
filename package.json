@@ -5,12 +5,16 @@
     "get-date-info": "index.js"
   },
   "description": "An npm package that can get time information.",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "dist/index.js",
   "author": "taic-dev",
   "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build"
+  },
   "devDependencies": {
     "@types/node": "^18.15.11",
     "typescript": "^5.0.3"
