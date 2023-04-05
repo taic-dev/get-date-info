@@ -1,0 +1,18 @@
+{
+  "name": "get-date-info",
+  "version": "1.0.0",
+  "bin": {
+    "get-date-info": "index.js"
+  },
+  "description": "An npm package that can get time information.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "taic-dev",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.3"
+  }
+}
