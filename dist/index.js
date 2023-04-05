@@ -1,6 +1,21 @@
 "use strict";
-function hi(name) {
-    console.log(`Hello ${name}`);
+// type monthType = {
+//   en: Array<string>,
+//   ja: Array<string>,
+// }
+function getDateInfo(initial, format) {
+    const { formatObj } = require("./formatObj");
+    console.log(formatObj);
+    // const date = new Date();
+    // date.getFullYear();
+    // date.getMonth();
+    // date.getDate();
+    // date.getHours();
+    // date.getMinutes();
+    // date.getSeconds();
+    // date.getMilliseconds();
+    // date.getDay();
 }
-module.exports = hi;
-module.exports.default = hi;
+getDateInfo("", "");
+module.exports = getDateInfo;
+module.exports.default = getDateInfo;

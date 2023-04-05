@@ -1,1 +1,1 @@
-declare function hi(name: string): void;
+declare function getDateInfo(initial: string, format: string): void;
