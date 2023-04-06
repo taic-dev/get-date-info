@@ -1,6 +1,6 @@
 {
   "name": "get-date-info",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "bin": {
     "get-date-info": "index.js"
   },
