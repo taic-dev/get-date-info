@@ -1,4 +1,4 @@
-type monthType = {
+type formatType = {
   en: {
     week: Array<string>,
     month: Array<string>,
@@ -9,7 +9,7 @@ type monthType = {
   }
 }
 
-export const formatObj:monthType = {
+export const formatObj:formatType = {
   en: {
     week: ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday",],
     month: ["January","February","March","April","May","June","July","August","September","October","Nobember","December",]

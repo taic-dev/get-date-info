@@ -1,10 +1,12 @@
-export declare const formatObj: {
+type monthType = {
     en: {
-        week: string[];
-        month: string[];
+        week: Array<string>;
+        month: Array<string>;
     };
     ja: {
-        week: string[];
-        month: string[];
+        week: Array<string>;
+        month: Array<string>;
     };
 };
+export declare const formatObj: monthType;
+export {};
