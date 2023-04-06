@@ -1,21 +1,3 @@
-<style>
-.column-left{
-  float: left;
-  width: 47.5%;
-  text-align: left;
-}
-.column-right{
-  float: right;
-  width: 47.5%;
-  text-align: left;
-}
-.column-one{
-  float: left;
-  width: 100%;
-  text-align: left;
-}
-</style>
-
 # get-date-info
  An npm package that can get time information.
 
@@ -35,8 +17,8 @@ getDateInfo("time-initial","lang")
 
 ## Argument
 
-<div class="column-one">
-  <div class="column-left">
+<div class="column-one" style="display: flex; justify-content: space-between;">
+  <div class="column-left" stlye="width: 45%;">
 
   |  time-initial | meaning       |
   | ----          | ----          |
@@ -50,7 +32,7 @@ getDateInfo("time-initial","lang")
   |  ms           |  Milliseconds |
 
   </div>
-  <div class="column-right">
+  <div class="column-right" stlye="width: 45%;">
 
   |  lang  | meaning     |
   | ----   | ----        |
