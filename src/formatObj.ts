@@ -23,6 +23,10 @@ type formatType = {
     w: Array<string>,
     m: Array<string>,
   }
+  eo: {
+    w: Array<string>,
+    m: Array<string>,
+  }
   it: {
     w: Array<string>,
     m: Array<string>,
@@ -77,6 +81,10 @@ export const formatObj:formatType = {
   ms: {
     w: ["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu",],
     m: ["Januari","Februari","Mac","April","Mei","Jun","Julai","Ogos","September","Oktober","November","Disember",]
+  },
+  eo: {
+    w: ["Dimanĉo","Lundo","Mardo","Merkredo","Jaŭdo","Vendredo","Sabate",],
+    m: ["Januaro","Februaro","Marto","Aprilo","Majo","Junio","Julio","Aŭgusto","Septembro","Oktobro","Novembro","Decembro",]
   },
   it: {
     w: ["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato",],
