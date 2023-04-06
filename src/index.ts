@@ -1,21 +1,42 @@
-function getDateInfo(initial: string, format: string) {
-  const { formatObj } = require("./formatObj");
+const { formatObj } = require("./formatObj");
 
-  console.log(formatObj);
+function getDateInfo(initial: string, format?: string) {
+  const date = new Date();
 
-  // const date = new Date();
+  if(initial === "y") {
+    return date.getFullYear();
+  }
 
-  // date.getFullYear();
-  // date.getMonth();
-  // date.getDate();
-  // date.getHours();
-  // date.getMinutes();
-  // date.getSeconds();
-  // date.getMilliseconds();
-  // date.getDay();
+  if(initial === "m") {
+    return date.getMonth();
+  }
+
+  if(initial === "d") {
+    return date.getDate();
+  }
+
+  if(initial === "h") {
+    return date.getHours();
+  }
+
+  if(initial === "i") {
+    return date.getMinutes();
+  }
+  
+  if(initial === "s") {
+    return date.getSeconds();
+  }
+
+  if(initial === "w") {
+    return date.getDay();
+  }
+  
+  if(initial === "ms") {
+    return date.getMilliseconds();
+  }
 }
 
-getDateInfo("","");
+getDateInfo("");
 
 module.exports = getDateInfo;
 module.exports.default = getDateInfo;
