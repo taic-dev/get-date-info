@@ -1,32 +1,11 @@
 "use strict";
 const { formatObj } = require("./formatObj");
+const { initialObj } = require("./initialObj");
 function getDateInfo(initial, format) {
-    const date = new Date();
-    if (initial === "y") {
-        return date.getFullYear();
-    }
-    if (initial === "m") {
-        return date.getMonth();
-    }
-    if (initial === "d") {
-        return date.getDate();
-    }
-    if (initial === "h") {
-        return date.getHours();
-    }
-    if (initial === "i") {
-        return date.getMinutes();
-    }
-    if (initial === "s") {
-        return date.getSeconds();
-    }
-    if (initial === "w") {
-        return date.getDay();
-    }
-    if (initial === "ms") {
-        return date.getMilliseconds();
-    }
+  if (initial === "w" || initial === "m") {
+    return formatObj[format][initial][initialObj[initial]];
+  }
+  return initialObj[initial];
 }
-console.log(getDateInfo("y"));
 module.exports = getDateInfo;
 module.exports.default = getDateInfo;

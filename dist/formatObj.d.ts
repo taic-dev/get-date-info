@@ -1,12 +1,12 @@
-type monthType = {
+type formatType = {
     en: {
-        week: Array<string>;
-        month: Array<string>;
+        w: Array<string>;
+        m: Array<string>;
     };
     ja: {
-        week: Array<string>;
-        month: Array<string>;
+        w: Array<string>;
+        m: Array<string>;
     };
 };
-export declare const formatObj: monthType;
+export declare const formatObj: formatType;
 export {};
