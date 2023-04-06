@@ -1,8 +1,3 @@
-// type monthType = {
-//   en: Array<string>,
-//   ja: Array<string>,
-// }
-
 function getDateInfo(initial: string, format: string) {
   const { formatObj } = require("./formatObj");
 
