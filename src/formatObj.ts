@@ -15,6 +15,10 @@ type formatType = {
     w: Array<string>,
     m: Array<string>,
   }
+  it: {
+    w: Array<string>,
+    m: Array<string>,
+  }
 }
 
 export const formatObj:formatType = {
@@ -33,5 +37,9 @@ export const formatObj:formatType = {
   zh: {
     w: ["星期 天","星期 一","星期 二","星期 三","星期 四","星期 五","星期 六",],
     m: ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月",]
+  },
+  it: {
+    w: ["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato",],
+    m: ["Gennaio","Febbraio","Marzo","Aprile","Maggio","Giugno","Luglio","Agosto","Settembre","Ottobre","Novembre","Dicembre",]
   }
 };
