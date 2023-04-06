@@ -7,6 +7,10 @@ type formatType = {
     w: Array<string>,
     m: Array<string>,
   }
+  ko: {
+    w: Array<string>,
+    m: Array<string>,
+  }
 }
 
 export const formatObj:formatType = {
@@ -17,5 +21,9 @@ export const formatObj:formatType = {
   ja: {
     w: ["日曜日","月曜日","火曜日","水曜日","木曜日","金曜日","土曜日",],
     m: ["1月","2月","3月","4月","5月","6月","7月","8月","9月","10月","11月","12月",]
+  },
+  ko: {
+    w: ["일요일","월요일","화요일","수요일","목요일","금요일","토요일",],
+    m: ["일월","이월","삼월","사월","오월","유월","칠월","팔월","구월","시월","십일월","십이월",]
   },
 };
