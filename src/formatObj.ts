@@ -19,6 +19,10 @@ type formatType = {
     w: Array<string>,
     m: Array<string>,
   }
+  ms: {
+    w: Array<string>,
+    m: Array<string>,
+  }
   it: {
     w: Array<string>,
     m: Array<string>,
@@ -69,6 +73,10 @@ export const formatObj:formatType = {
   la: {
     w: ["Dies Solis","Dies Lunae","Dies Martis","Dies Mercurii","Dies Lovis","Dies Veneris","Dies Saturni",],
     m: ["Januarius","Februarius","Martius","Aprilis","Maius","Junius","Julius","Augustus","September","October","November","December",]
+  },
+  ms: {
+    w: ["Ahad","Isnin","Selasa","Rabu","Khamis","Jumaat","Sabtu",],
+    m: ["Januari","Februari","Mac","April","Mei","Jun","Julai","Ogos","September","Oktober","November","Disember",]
   },
   it: {
     w: ["Domenica","Lunedì","Martedì","Mercoledì","Giovedì","Venerdì","Sabato",],
