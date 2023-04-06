@@ -23,6 +23,10 @@ type formatType = {
     w: Array<string>,
     m: Array<string>,
   }
+  el: {
+    w: Array<string>,
+    m: Array<string>,
+  }
   ar: {
     w: Array<string>,
     m: Array<string>,
@@ -57,6 +61,10 @@ export const formatObj:formatType = {
   de: {
     w: ["Sonntag","Montag","Dienstag","Mittwoch","Donnerstag","Freitag","Samstag",],
     m: ["Januar","Februar","März","April","Mai","Juni","Juli","August","September","Oktober","November","Dezember",]
+  },
+  el: {
+    w: ["Κυριακή","Δευτέρα","Τρίτη","Τετάρτη","Πέμπτη","Παρασκευή","Σάββατο",],
+    m: ["Ιανουάριος","Φεβρουάριος","Μάρτιος","Απρίλιος","Μάιος","Ιούνιος","Ιούλιος","Αύγουστος","Σεπτέμβριος","Οκτώβριος","Νοέμβριος","Δεκέμβριος",]
   },
   ar: {
     w: ["الأحد","التنين","التلاتا","الأربعا","الخميس","الجمعة","السبت",],
